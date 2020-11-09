@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_service/cloud_cnki_service.iml" filepath="$PROJECT_DIR$/cloud_cnki_service/cloud_cnki_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_tool/cloud_cnki_tool.iml" filepath="$PROJECT_DIR$/cloud_cnki_tool/cloud_cnki_tool.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/common_auth/common_auth.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/common_auth/common_auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/common_core/common_core.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/common_core/common_core.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/common_jwt/common_jwt.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/common_jwt/common_jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/common_log/common_log.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/common_log/common_log.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/common_mq/common_mq.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/common_mq/common_mq.iml" />

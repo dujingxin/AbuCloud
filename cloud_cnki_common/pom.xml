@@ -18,5 +18,6 @@
         <module>common_jwt</module>
         <module>common_auth</module>
         <module>common_swagger</module>
+        <module>common_core</module>
     </modules>
 </project>
