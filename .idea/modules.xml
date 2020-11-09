@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/cloud_cnki_common.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/cloud_cnki_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_gateway/cloud_cnki_gateway.iml" filepath="$PROJECT_DIR$/cloud_cnki_gateway/cloud_cnki_gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_oa_v1.iml" filepath="$PROJECT_DIR$/cloud_cnki_oa_v1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_service/cloud_cnki_service.iml" filepath="$PROJECT_DIR$/cloud_cnki_service/cloud_cnki_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_tool/cloud_cnki_tool.iml" filepath="$PROJECT_DIR$/cloud_cnki_tool/cloud_cnki_tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/common_auth/common_auth.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/common_auth/common_auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/common_jwt/common_jwt.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/common_jwt/common_jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/common_log/common_log.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/common_log/common_log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/common_mq/common_mq.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/common_mq/common_mq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/common_redis/common_redis.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/common_redis/common_redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/common_swagger/common_swagger.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/common_swagger/common_swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/redis.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_service/service_activity/service_activity.iml" filepath="$PROJECT_DIR$/cloud_cnki_service/service_activity/service_activity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_service/service_auth/service_auth.iml" filepath="$PROJECT_DIR$/cloud_cnki_service/service_auth/service_auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_service/service_sys/service_sys.iml" filepath="$PROJECT_DIR$/cloud_cnki_service/service_sys/service_sys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_tool/tool_generator/tool_generator.iml" filepath="$PROJECT_DIR$/cloud_cnki_tool/tool_generator/tool_generator.iml" />
+    </modules>
+  </component>
+</project>

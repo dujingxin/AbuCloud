@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for redis" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="redis" />
+      </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common_redis" />
+        <module name="service_activity" />
+        <module name="tool_generator" />
+        <module name="common_auth" />
+        <module name="service_sys" />
+        <module name="common_mq" />
+        <module name="cloud_cnki_gateway" />
+        <module name="common_swagger" />
+        <module name="common_jwt" />
+        <module name="common_log" />
+        <module name="service_auth" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud_cnki_common" target="1.8" />
+      <module name="cloud_cnki_config" target="1.8" />
+      <module name="cloud_cnki_gateway" target="1.8" />
+      <module name="cloud_cnki_nacos" target="1.8" />
+      <module name="cloud_cnki_oa_v1" target="1.8" />
+      <module name="cloud_cnki_service" target="1.8" />
+      <module name="cloud_cnki_tool" target="1.8" />
+      <module name="common_auth" target="1.8" />
+      <module name="common_jwt" target="1.8" />
+      <module name="common_log" target="1.8" />
+      <module name="common_mq" target="1.8" />
+      <module name="common_redis" target="1.8" />
+      <module name="common_swagger" target="1.8" />
+      <module name="redis" target="1.8" />
+      <module name="service_activity" target="1.8" />
+      <module name="service_auth" target="1.8" />
+      <module name="service_sys" target="1.8" />
+      <module name="tool_generator" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud_cnki_config" options="" />
+      <module name="cloud_cnki_gateway" options="" />
+      <module name="cloud_cnki_nacos" options="" />
+      <module name="cloud_cnki_oa_v1" options="" />
+      <module name="cloud_cnki_service" options="" />
+      <module name="cloud_cnki_tool" options="" />
+      <module name="common_jwt" options="" />
+      <module name="common_log" options="" />
+      <module name="common_mq" options="" />
+      <module name="common_redis" options="" />
+      <module name="service_activity" options="" />
+      <module name="service_auth" options="" />
+      <module name="service_sys" options="" />
+    </option>
+  </component>
+</project>

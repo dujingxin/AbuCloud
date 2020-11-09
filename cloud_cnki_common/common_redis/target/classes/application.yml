@@ -1,0 +1,23 @@
+spring:
+  #redis
+  redis:
+    database: 0
+    host: 10.170.128.9
+    password: TTKNOA@cnki20200929
+    port: 6079
+    jedis:
+      pool:
+        max-active: 50
+        max-idle: 20
+        max-wait: 3000
+        min-idle: 2
+      port: 6079
+      timeout: 1000
+    #热部署生效
+  devtools:
+    restart:
+      enabled: true
+#Tomcat启动多个项目冲突问题
+jmx:
+  enabled: false
+
