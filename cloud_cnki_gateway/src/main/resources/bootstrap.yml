@@ -26,3 +26,14 @@ spring:
         locator:
           lowerCaseServiceId: true
           enabled: true
+      routes:
+        - id: tt
+          uri: lb://cloud-cnki-feign
+          predicates:
+            - Path=/routes/test/**
+          filters:
+            - StripPrefix=1
+        - id: ss
+          uri: http://www.baidu.com
+          predicates:
+            - Path=/baidu/**

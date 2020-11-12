@@ -40,6 +40,9 @@
         <swagger-ui.version>1.9.5</swagger-ui.version>
         <guava.version>26.0-jre</guava.version>
         <anji-plus.version>1.2.4</anji-plus.version>
+        <mybatis-plus.start.version>3.1.0</mybatis-plus.start.version>
+        <mybatis-spring.version>2.0.2</mybatis-spring.version>
+        <mybatis-plus-extension.version>3.1.0</mybatis-plus-extension.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -149,10 +152,21 @@
                 <version>${velocity.version}</version>
             </dependency>
 
+            <!--mybatis-plus-->
             <dependency>
-                <groupId>tk.mybatis</groupId>
-                <artifactId>mapper-spring-boot-starter</artifactId>
-                <version>${mapper.starter.version}</version>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.start.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>${mybatis-spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus-extension.version}</version>
             </dependency>
             <dependency>
                 <groupId>cn.hutool</groupId>
@@ -240,6 +254,7 @@
         <module>cloud_cnki_gateway</module>
         <module>cloud_cnki_service</module>
         <module>cloud_cnki_tool</module>
+        <module>cloud_cnki_feign</module>
     </modules>
     <packaging>pom</packaging>
 

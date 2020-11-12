@@ -10,11 +10,15 @@
     <file url="file://$PROJECT_DIR$/cloud_cnki_common/common_redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_cnki_common/common_redis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_cnki_common/common_swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_cnki_feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_cnki_feign/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_cnki_gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_cnki_gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_cnki_service/service_activity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_cnki_service/service_auth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_cnki_service/service_sys/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_cnki_service/service_sys/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_cnki_tool/tool_generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_cnki_tool/tool_generator/src/main/resources" charset="UTF-8" />
   </component>
 </project>
