@@ -8,46 +8,21 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<groupId>cloud.cnki</groupId>
 	<artifactId>common_log</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>common_log</name>
-	<description>common_log</description>
-
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
 
 	<dependencies>
+		<!-- 系统模块 -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<groupId>cloud.cnki</groupId>
+			<artifactId>cloud_cnki_feign</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<!-- 解析客户端操作系统、浏览器等 -->
 		<dependency>
-			<groupId>org.apache.kafka</groupId>
-			<artifactId>kafka-streams</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
+			<groupId>eu.bitwalker</groupId>
+			<artifactId>UserAgentUtils</artifactId>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>

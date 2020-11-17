@@ -16,8 +16,8 @@
     <file url="file://$PROJECT_DIR$/cloud_cnki_gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_cnki_service/service_activity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_cnki_service/service_auth/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud_cnki_service/service_sys/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud_cnki_service/service_sys/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_cnki_service/service_models/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_cnki_service/service_models/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_cnki_tool/tool_generator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_cnki_tool/tool_generator/src/main/resources" charset="UTF-8" />
   </component>

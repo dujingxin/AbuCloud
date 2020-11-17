@@ -22,7 +22,7 @@
         <module name="common_jwt" />
         <module name="common_core" />
         <module name="common_log" />
-        <module name="service_sys" />
+        <module name="service_models" />
         <module name="cloud_cnki_gateway" />
         <module name="common_swagger" />
         <module name="service_auth" />
@@ -47,7 +47,7 @@
       <module name="redis" target="1.8" />
       <module name="service_activity" target="1.8" />
       <module name="service_auth" target="1.8" />
-      <module name="service_sys" target="1.8" />
+      <module name="service_models" target="1.8" />
       <module name="tool_generator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -65,7 +65,7 @@
       <module name="common_redis" options="" />
       <module name="service_activity" options="" />
       <module name="service_auth" options="" />
-      <module name="service_sys" options="" />
+      <module name="service_models" options="" />
     </option>
   </component>
 </project>

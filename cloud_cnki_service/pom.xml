@@ -15,7 +15,7 @@
     <modules>
         <module>service_activity</module>
         <module>service_auth</module>
-        <module>service_sys</module>
+        <module>service_models</module>
     </modules>
 
 </project>
