@@ -1,7 +1,7 @@
 package cloud.cnki.service;
 
 
-import cloud.cnki.entity.SysOperLogEntity;
+import cloud.cnki.feign.entity.SysOperLogEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

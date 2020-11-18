@@ -8,7 +8,6 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<groupId>cloud.cnki</groupId>
 	<artifactId>cloud_cnki_gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cloud_cnki_gateway</name>

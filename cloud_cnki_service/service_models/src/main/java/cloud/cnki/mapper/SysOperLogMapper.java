@@ -1,6 +1,6 @@
 package cloud.cnki.mapper;
 
-import cloud.cnki.entity.SysOperLogEntity;
+import cloud.cnki.feign.entity.SysOperLogEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.springframework.stereotype.Repository;
 

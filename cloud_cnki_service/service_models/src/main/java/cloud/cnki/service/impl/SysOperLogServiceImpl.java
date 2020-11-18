@@ -1,6 +1,6 @@
 package cloud.cnki.service.impl;
 
-import cloud.cnki.entity.SysOperLogEntity;
+import cloud.cnki.feign.entity.SysOperLogEntity;
 import cloud.cnki.mapper.SysOperLogMapper;
 import cloud.cnki.service.SysOperLogService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

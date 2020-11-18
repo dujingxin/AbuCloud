@@ -1,4 +1,4 @@
-package cloud.cnki.entity;
+package cloud.cnki.feign.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -8,7 +8,7 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * 操作日志记录
@@ -102,7 +102,5 @@ public class SysOperLogEntity implements Serializable {
     /**
      * 操作时间
      */
-    private Date operTime;
-
-
+    private LocalDateTime operTime;
 }

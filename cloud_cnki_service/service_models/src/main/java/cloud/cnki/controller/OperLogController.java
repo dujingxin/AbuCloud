@@ -1,6 +1,6 @@
 package cloud.cnki.controller;
 
-import cloud.cnki.entity.SysOperLogEntity;
+import cloud.cnki.feign.entity.SysOperLogEntity;
 import cloud.cnki.service.SysOperLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
