@@ -1,4 +1,4 @@
-package cloud.cnki.feign.Controller;
+package cloud.cnki.api.Controller;
 
 import cloud.cnki.core.utils.IpUtils;
 import org.springframework.web.bind.annotation.GetMapping;

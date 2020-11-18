@@ -15,7 +15,7 @@
 		<!-- 系统模块 -->
 		<dependency>
 			<groupId>cloud.cnki</groupId>
-			<artifactId>cloud_cnki_feign</artifactId>
+			<artifactId>cloud_cnki_api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<!-- 解析客户端操作系统、浏览器等 -->

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_api/cloud_cnki_api.iml" filepath="$PROJECT_DIR$/cloud_cnki_api/cloud_cnki_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/cloud_cnki_common.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/cloud_cnki_common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_feign/cloud_cnki_feign.iml" filepath="$PROJECT_DIR$/cloud_cnki_feign/cloud_cnki_feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_gateway/cloud_cnki_gateway.iml" filepath="$PROJECT_DIR$/cloud_cnki_gateway/cloud_cnki_gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_oa_v1.iml" filepath="$PROJECT_DIR$/cloud_cnki_oa_v1.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_service/cloud_cnki_service.iml" filepath="$PROJECT_DIR$/cloud_cnki_service/cloud_cnki_service.iml" />

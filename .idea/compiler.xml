@@ -18,10 +18,10 @@
         <module name="tool_generator" />
         <module name="common_auth" />
         <module name="common_mq" />
-        <module name="cloud_cnki_feign" />
         <module name="common_jwt" />
         <module name="common_core" />
         <module name="common_log" />
+        <module name="cloud_cnki_api" />
         <module name="service_models" />
         <module name="cloud_cnki_gateway" />
         <module name="common_swagger" />
@@ -29,9 +29,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud_cnki_api" target="1.8" />
       <module name="cloud_cnki_common" target="1.8" />
       <module name="cloud_cnki_config" target="1.8" />
-      <module name="cloud_cnki_feign" target="1.8" />
       <module name="cloud_cnki_gateway" target="1.8" />
       <module name="cloud_cnki_nacos" target="1.8" />
       <module name="cloud_cnki_oa_v1" target="1.8" />

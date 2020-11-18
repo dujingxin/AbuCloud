@@ -1,4 +1,4 @@
-package cloud.cnki.feign.entity;
+package cloud.cnki.api.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

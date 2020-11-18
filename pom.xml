@@ -248,7 +248,7 @@
         <module>cloud_cnki_gateway</module>
         <module>cloud_cnki_service</module>
         <module>cloud_cnki_tool</module>
-        <module>cloud_cnki_feign</module>
+        <module>cloud_cnki_api</module>
     </modules>
     <packaging>pom</packaging>
 

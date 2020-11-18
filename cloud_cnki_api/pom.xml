@@ -10,7 +10,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>cloud_cnki_feign</artifactId>
+    <artifactId>cloud_cnki_api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>

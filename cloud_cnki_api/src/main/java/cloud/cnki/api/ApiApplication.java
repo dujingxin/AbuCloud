@@ -1,16 +1,19 @@
-package cloud.cnki.feign;
+package cloud.cnki.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
+/**
+ * @author durjx
+ */
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @EnableDiscoveryClient
-public class FeignApplication {
+public class ApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FeignApplication.class, args);
+		SpringApplication.run(ApiApplication.class, args);
 	}
 
 }

@@ -2,7 +2,8 @@ package cloud.cnki.common_log.aspect;
 
 import cloud.cnki.common_log.annotation.OperLog;
 import cloud.cnki.common_log.enums.BusinessStatus;
-import cloud.cnki.feign.entity.SysOperLogEntity;
+import cloud.cnki.core.utils.IpUtils;
+import cloud.cnki.api.entity.SysOperLogEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -16,6 +17,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
+import java.util.Optional;
 
 /**
  * OperLogAspect
@@ -53,19 +55,19 @@ class OperLogAspect {
     }
 
     private void handleLog(JoinPoint joinPoint, Exception exception) {
-        MethodSignature methodSignature = (MethodSignature)joinPoint.getSignature();
+        MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
         Method method = methodSignature.getMethod();
         OperLog operLog = method.getAnnotation(OperLog.class);
-        if (null==operLog) {
-            return ;
+        if (null == operLog) {
+            return;
         }
         SysOperLogEntity sysOperLog = new SysOperLogEntity();
-
-        ServletRequestAttributes servletRequest = (ServletRequestAttributes)RequestContextHolder.getRequestAttributes();
+        ServletRequestAttributes servletRequest = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         sysOperLog.setStatus(BusinessStatus.SUCCESS.ordinal());
 
-        HttpServletRequest request = servletRequest != null ? servletRequest.getRequest() : null;
-
+        HttpServletRequest request = Optional.ofNullable(servletRequest.getRequest()).get();
+        sysOperLog.setOperIp(IpUtils.getIpAddr(request));
+        sysOperLog.setOperUrl(request.getRequestURI());
 
     }
 }
