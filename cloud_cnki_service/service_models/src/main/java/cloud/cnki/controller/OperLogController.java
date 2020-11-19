@@ -17,7 +17,7 @@ import java.util.List;
  * @author durjx
  * @date 2020-11-17
  */
-@Api(tags = "用户信息处理")
+@Api(tags = "操作日志")
 @RestController
 @RequestMapping("operLog")
 public class OperLogController {

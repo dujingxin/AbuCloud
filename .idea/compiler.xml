@@ -17,6 +17,7 @@
         <module name="service_activity" />
         <module name="tool_generator" />
         <module name="common_auth" />
+        <module name="service_job" />
         <module name="common_mq" />
         <module name="common_jwt" />
         <module name="common_core" />
@@ -47,6 +48,7 @@
       <module name="redis" target="1.8" />
       <module name="service_activity" target="1.8" />
       <module name="service_auth" target="1.8" />
+      <module name="service_job" target="1.8" />
       <module name="service_models" target="1.8" />
       <module name="tool_generator" target="1.8" />
     </bytecodeTargetLevel>

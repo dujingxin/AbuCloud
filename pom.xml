@@ -40,6 +40,7 @@
         <feign-httpclient.version>10.1.0</feign-httpclient.version>
         <spring-actuator.version>2.4.0</spring-actuator.version>
         <spring-zipkin.version>2.2.1.RELEASE</spring-zipkin.version>
+        <xxl-job.version>2.2.0</xxl-job.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -210,6 +211,12 @@
                 <groupId>io.github.openfeign</groupId>
                 <artifactId>feign-httpclient</artifactId>
                 <version>${feign-httpclient.version}</version>
+            </dependency>
+            <!-- xxl job -->
+            <dependency>
+                <groupId>com.xuxueli</groupId>
+                <artifactId>xxl-job-core</artifactId>
+                <version>${xxl-job.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

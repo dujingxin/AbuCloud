@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_common/redis.iml" filepath="$PROJECT_DIR$/cloud_cnki_common/redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_service/service_activity/service_activity.iml" filepath="$PROJECT_DIR$/cloud_cnki_service/service_activity/service_activity.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_service/service_auth/service_auth.iml" filepath="$PROJECT_DIR$/cloud_cnki_service/service_auth/service_auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_cnki_service/service_job/service_job.iml" filepath="$PROJECT_DIR$/cloud_cnki_service/service_job/service_job.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_service/service_models/service_models.iml" filepath="$PROJECT_DIR$/cloud_cnki_service/service_models/service_models.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_cnki_tool/tool_generator/tool_generator.iml" filepath="$PROJECT_DIR$/cloud_cnki_tool/tool_generator/tool_generator.iml" />
     </modules>

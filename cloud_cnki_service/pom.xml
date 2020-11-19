@@ -16,6 +16,7 @@
         <module>service_activity</module>
         <module>service_auth</module>
         <module>service_models</module>
+        <module>service_job</module>
     </modules>
 
     <dependencies>

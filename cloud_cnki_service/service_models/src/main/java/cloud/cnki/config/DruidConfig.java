@@ -17,20 +17,18 @@ import java.util.Map;
 
 /**
  * druid 配置多数据源
-
- *  @author durjx
- *  @date 2020/11/11
- * */
+ *
+ * @author durjx
+ * @date 2020/11/11
+ */
 @Configuration
-public class DruidConfig
-{
+public class DruidConfig {
     @Autowired
     private DruidProperties druidProperties;
 
     @Bean
     @ConfigurationProperties("spring.datasource.druid.master")
-    public DataSource masterDataSource()
-    {
+    public DataSource masterDataSource() {
         DruidDataSource dataSource = DruidDataSourceBuilder.create().build();
         return druidProperties.dataSource(dataSource);
     }
@@ -38,20 +36,17 @@ public class DruidConfig
     @Bean
     @ConfigurationProperties("spring.datasource.druid.slave")
     @ConditionalOnProperty(prefix = "spring.datasource.druid.slave", name = "enabled", havingValue = "true")
-    public DataSource slaveDataSource()
-    {
+    public DataSource slaveDataSource() {
         DruidDataSource dataSource = DruidDataSourceBuilder.create().build();
         return druidProperties.dataSource(dataSource);
     }
 
     @Bean(name = "dynamicDataSource")
     @Primary
-    public DynamicDataSource dataSource()
-    {
+    public DynamicDataSource dataSource() {
         Map<Object, Object> targetDataSources = new HashMap<>();
         targetDataSources.put(DataSourceType.MASTER.name(), masterDataSource());
-        if (druidProperties.slaveEnable)
-        {
+        if (druidProperties.slaveEnable) {
             targetDataSources.put(DataSourceType.SLAVE.name(), slaveDataSource());
         }
         return new DynamicDataSource(masterDataSource(), targetDataSources);
