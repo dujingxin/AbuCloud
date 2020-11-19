@@ -24,6 +24,12 @@ spring:
         file-extension: yml
       discovery:
         server-addr: 10.170.128.9:8848
+  #整合sleuth和zipkin
+  zipkin:
+    base-url: http://10.170.128.9:9411
+    #Greenwich SR3及更高版本，可使用 discovery-client-enabled 或者 discoveryClientEnabled
+    #否则使用 discoveryClientEnabled
+    discoveryClientEnabled: false
 
 feign:
   hystrix:

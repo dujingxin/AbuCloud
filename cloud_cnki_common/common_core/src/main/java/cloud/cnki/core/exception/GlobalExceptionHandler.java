@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
  * 异常处理器
+ *
  * @author zmr
  * @author lucas
  */
 @RestControllerAdvice
-public class GlobalExceptionHandler
-{
+public class GlobalExceptionHandler {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     /**
@@ -26,8 +26,7 @@ public class GlobalExceptionHandler
      */
     @ExceptionHandler({HttpRequestMethodNotSupportedException.class})
     @ResponseStatus(code = HttpStatus.METHOD_NOT_ALLOWED)
-    public Result handleException(HttpRequestMethodNotSupportedException e)
-    {
+    public Result handleException(HttpRequestMethodNotSupportedException e) {
         logger.error(e.getMessage(), e);
         return Result.error("不支持' " + e.getMethod() + "'请求");
     }
@@ -36,10 +35,8 @@ public class GlobalExceptionHandler
      * 拦截未知的运行时异常
      */
     @ExceptionHandler(RuntimeException.class)
-    public Result notFount(RuntimeException e)
-    {
-        if (AnnotationUtils.findAnnotation(e.getClass(), ResponseStatus.class) != null)
-        {
+    public Result notFount(RuntimeException e) {
+        if (AnnotationUtils.findAnnotation(e.getClass(), ResponseStatus.class) != null) {
             throw e;
         }
         logger.error("运行时异常:", e);
@@ -49,22 +46,14 @@ public class GlobalExceptionHandler
     /**
      * 处理自定义异常
      */
-    @ExceptionHandler(RuoyiException.class)
-    public Result handleWindException(RuoyiException e)
-    {
-        return Result.error(e.getCode(), e.getMessage());
-    }
-
     @ExceptionHandler(DuplicateKeyException.class)
-    public Result handleDuplicateKeyException(DuplicateKeyException e)
-    {
+    public Result handleDuplicateKeyException(DuplicateKeyException e) {
         logger.error(e.getMessage(), e);
         return Result.error("数据库中已存在该记录");
     }
 
     @ExceptionHandler(Exception.class)
-    public Result handleException(Exception e) throws Exception
-    {
+    public Result handleException(Exception e) throws Exception {
         logger.error(e.getMessage(), e);
         return Result.error("服务器错误，请联系管理员");
     }
@@ -76,15 +65,13 @@ public class GlobalExceptionHandler
      * @return 统一封装的结果类, 含有代码code和提示信息msg
      */
     @ExceptionHandler(UnauthorizedException.class)
-    public Result handle401(UnauthorizedException e)
-    {
+    public Result handle401(UnauthorizedException e) {
         return Result.error(401, e.getMessage());
     }
 
     // 验证码错误
     @ExceptionHandler(ValidateCodeException.class)
-    public Result handleCaptcha(ValidateCodeException e)
-    {
+    public Result handleCaptcha(ValidateCodeException e) {
         return Result.error(e.getMessage());
     }
 }

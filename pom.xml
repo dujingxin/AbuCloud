@@ -38,12 +38,13 @@
         <mybatis-plus.start.version>3.1.0</mybatis-plus.start.version>
         <mybatis-spring.version>2.0.2</mybatis-spring.version>
         <feign-httpclient.version>10.1.0</feign-httpclient.version>
+        <spring-actuator.version>2.4.0</spring-actuator.version>
+        <spring-zipkin.version>2.2.1.RELEASE</spring-zipkin.version>
     </properties>
 
     <!-- 依赖声明 -->
     <dependencyManagement>
         <dependencies>
-
             <!--cloud -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -76,7 +77,17 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
+            <!-- actuator监控 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+                <version>${spring-actuator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-zipkin</artifactId>
+                <version>${spring-zipkin.version}</version>
+            </dependency>
             <!--阿里数据库连接池 -->
             <dependency>
                 <groupId>com.alibaba</groupId>

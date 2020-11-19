@@ -2,11 +2,10 @@ package cloud.cnki.core.enums;
 
 /**
  * 数据源
- * 
- * @author ruoyi
+ *
+ * @author durjx
  */
-public enum DataSourceType
-{
+public enum DataSourceType {
     /**
      * 主库
      */

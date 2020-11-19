@@ -25,12 +25,13 @@ spring:
       discovery:
         locator:
           lowerCaseServiceId: true
+          #gateway从nacos上获取服务
           enabled: true
       routes:
-        - id: tt
-          uri: lb://cloud-cnki-feign
+        - id: system
+          uri: lb://cloud-system
           predicates:
-            - Path=/routes/test/**
+            - Path=/cnki/operLog/test1/**
           filters:
             - StripPrefix=1
         - id: ss

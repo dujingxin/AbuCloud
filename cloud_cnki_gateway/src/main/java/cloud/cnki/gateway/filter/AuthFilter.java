@@ -34,32 +34,30 @@ import java.util.Objects;
 @Slf4j
 public class AuthFilter implements GlobalFilter, Ordered {
 
-    private static  final String[] WHITE_LIST = {"/auth/login", "/user/register", "/system/v2/api-docs"};
+    private static final String[] WHITE_LIST = {"/auth/login", "/user/register", "/system/v2/api-docs", "/swagger-ui/*"};
     @Resource(name = "stringRedisTemplate")
     private ValueOperations<String, String> ops;
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         String url = exchange.getRequest().getURI().getPath();
-        log.info("url:{}",url);
-        if (Arrays.asList(WHITE_LIST).contains(url)){
+        log.info("url:{}", url);
+        if (Arrays.asList(WHITE_LIST).contains(url)) {
             return chain.filter(exchange);
         }
         String accessToken = exchange.getRequest().getHeaders().getFirst("accesstoken");
 
         if (StringUtils.isBlank(accessToken)) {
-          return   setUnauthorizedResponse(exchange,"token can't null or empty string");
+            return setUnauthorizedResponse(exchange, "token can't null or empty string");
         }
         String user = ops.get(Constants.ACCESS_TOKEN + accessToken);
-        if (org.apache.commons.lang3.StringUtils.isBlank(user))
-        {
+        if (StringUtils.isBlank(user)) {
             return setUnauthorizedResponse(exchange, "token verify error");
         }
         JSONObject jo = JSONObject.parseObject(user);
         String userId = jo.getString("userId");
         // 查询token信息
-        if (org.apache.commons.lang3.StringUtils.isBlank(userId))
-        {
+        if (StringUtils.isBlank(userId)) {
             return setUnauthorizedResponse(exchange, "token verify error");
         }
 
@@ -69,16 +67,17 @@ public class AuthFilter implements GlobalFilter, Ordered {
         ServerWebExchange mutableExchange = exchange.mutate().request(mutableReq).build();
         return chain.filter(mutableExchange);
     }
-    private Mono<Void> setUnauthorizedResponse(ServerWebExchange exchange, String msg)
-    {
+
+    private Mono<Void> setUnauthorizedResponse(ServerWebExchange exchange, String msg) {
         ServerHttpResponse serverHttpResponse = exchange.getResponse();
         serverHttpResponse.setStatusCode(HttpStatus.UNAUTHORIZED);
-        serverHttpResponse.getHeaders().add("Content-Type","application/json;charset=UTF-8");
+        serverHttpResponse.getHeaders().add("Content-Type", "application/json;charset=UTF-8");
         byte[] response = null;
-        response = JSON.toJSONString(Result.error(401,msg)).getBytes(StandardCharsets.UTF_8);
+        response = JSON.toJSONString(Result.error(401, msg)).getBytes(StandardCharsets.UTF_8);
         DataBuffer wrap = serverHttpResponse.bufferFactory().wrap(Objects.requireNonNull(response));
-        return  serverHttpResponse.writeWith(Flux.just(wrap));
+        return serverHttpResponse.writeWith(Flux.just(wrap));
     }
+
     @Override
     public int getOrder() {
         return -200;
