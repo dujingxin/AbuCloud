@@ -3,7 +3,7 @@ server:
 spring:
   application:
     name: cloud-system
-  profiles: 
+  profiles:
     active: dev
   devtools:
     restart:
@@ -24,15 +24,21 @@ spring:
         file-extension: yml
       discovery:
         server-addr: 10.170.128.9:8848
-  
-feign: 
-  hystrix: 
+
+feign:
+  hystrix:
     enabled: true
+  #开启feign client连接池
+  httpclient:
+    enabled: true
+    #最大连接数量
+    max-connections: 200
+    #每个路由最大连接数量
+    max-connections-per-route: 50
 
 # 暴露监控端点
 management:
   endpoints:
     web:
       exposure:
-        include: '*' 
-
+        include: '*'

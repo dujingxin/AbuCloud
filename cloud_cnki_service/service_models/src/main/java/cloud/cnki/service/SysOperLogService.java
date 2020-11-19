@@ -4,6 +4,8 @@ package cloud.cnki.service;
 import cloud.cnki.api.entity.SysOperLogEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * 操作日志记录 接口
  *
@@ -12,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface SysOperLogService extends IService<SysOperLogEntity> {
 
+    List<SysOperLogEntity> getAllLog();
 }

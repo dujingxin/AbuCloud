@@ -30,7 +30,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-
         <!--web 模块 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -124,6 +123,11 @@
         <dependency>
             <groupId>cloud.cnki</groupId>
             <artifactId>cloud_cnki_api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cloud.cnki</groupId>
+            <artifactId>common_log</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
