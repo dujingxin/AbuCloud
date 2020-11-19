@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationEvent;
 
 /**
  * SysOperLogEvent
+ * 事件
  *
  * @author durjx
  * @date 2020-11-18

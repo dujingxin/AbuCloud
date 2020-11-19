@@ -44,4 +44,10 @@ public class OperLogController {
     public String test1() {
         return "测试diaoyong";
     }
+
+    @PostMapping("save1")
+    @OperLog(MODEL_NAME = "新增操作日志", BUSINESS_TYPE = BusinessType.INSERT)
+    public void addSave1(@RequestBody SysOperLogEntity sysOperLog) {
+        operLogService.save(sysOperLog);
+    }
 }

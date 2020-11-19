@@ -9,9 +9,6 @@ import org.springframework.context.event.EventListener;
 import org.springframework.core.annotation.Order;
 import org.springframework.scheduling.annotation.Async;
 
-import java.util.List;
-import java.util.concurrent.CompletableFuture;
-
 /**
  * LogListener
  *
@@ -29,15 +26,6 @@ public class LogListener {
     public void listenOperLog(SysOperLogEvent event) {
         SysOperLogEntity sysOperLog = (SysOperLogEntity) event.getSource();
         remoteOperLogService.saveLog(sysOperLog);
-        log.info("远程操作日志记录成功：{}", sysOperLog);
-    }
-
-    @Async
-    @Order
-    @EventListener(SysOperLogEvent.class)
-    public CompletableFuture<List<SysOperLogEntity>> getLog() {
-        List<SysOperLogEntity> logs = remoteOperLogService.getLog();
-        log.info("远程查询日志记录成功：{}", logs);
-        return CompletableFuture.completedFuture(logs);
+        log.info("远程操作日志记录成功 ：{}", sysOperLog);
     }
 }
